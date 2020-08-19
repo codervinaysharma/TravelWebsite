@@ -1,0 +1,518 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'PT Sans', sans-serif;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+
+/* ##################################### Utility Classes #################################### */
+
+
+
+ul li{
+    font-size: 1rem;
+}
+
+a{
+    font-size: 3rem;
+    list-style: none;
+    text-decoration: none;
+    
+}
+
+p,li{
+    font-size: 2rem;
+    letter-spacing: 0.15em;
+}
+
+h1,h2,h3{
+    font-size: 3rem;
+    letter-spacing: 0.15em;
+}
+
+.size-large{
+    font-size: 2rem;
+}
+
+
+.text-white{
+    color: #f4f4f4;
+}
+
+.text-gray{
+    color: gray;
+}
+
+.text-red{
+    color: red;
+}
+.text-black{
+    color: black;
+}
+
+
+.container{
+    max-width: 1100px;
+    width: 90%;
+    margin: 0 auto;
+    padding-top: 2em;
+}
+
+
+
+.btn{
+    background-color: white;
+    color: black;
+    font-weight: 700;
+    padding: 0.3em;
+    border-radius: 2em;
+}
+
+.btn1{
+    background-color: #f4f4f4;
+    
+    color: brown;
+    border-radius: 1.5em;
+   
+}
+
+.bg-dark{
+    background: #010101;
+background: -webkit-radial-gradient(top left, #010101, #3A3857);
+background: -moz-radial-gradient(top left, #010101, #3A3857);
+background: radial-gradient(to bottom right, #010101, #3A3857);
+}
+
+
+/* ##################################### Header ########################################## */
+
+
+
+
+.header{
+    height: 95vh;
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),url(../Images/background1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+}
+
+ .navbar .logo{
+    float: left;
+    padding-top: 0.5em;
+}
+
+ .navbar .nav-items{
+    float: right;
+}
+
+ .navbar .navigate{
+    display: inline-block;
+    padding: 1.5rem;
+    
+}
+
+.navbar::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.navbar a{
+    padding-bottom: 0.3em;
+}
+
+.navbar a:hover{
+    border-bottom: 1px solid white;
+    
+}
+
+.header .heading .title1{
+    text-transform: uppercase;
+   
+}
+
+.header .heading .info{
+    text-transform: uppercase;
+    padding: 0.5em;
+    
+}
+
+.heading{
+    
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.heading a:hover{
+    background: lightgray;
+}
+
+
+/* ########################################### Showcase places ########################################## */
+
+
+.showcase{
+    background-color: #dddddd;
+    
+    padding: 10em 0;
+}
+
+.row{
+    height: 350px;
+    box-shadow: 5px 5px 20px 0px #888888;
+    background-color: #f4f4f4;
+    margin: 0 200px;
+}
+.row1{
+    margin-bottom: 10em;
+}
+
+.row1 .imgbox , .row2 .textbox{
+    float: left;
+    width: 50%;
+    
+
+}
+.row1 .textbox , .row2 .imgbox{
+    float: right;
+    width: 50%;
+    
+}
+
+.row1 .textbox, .row2 .textbox{
+    padding: 3em;
+    
+    
+}
+.row1 .imgbox, .row2 .imgbox{
+    height: 350px;
+}
+
+.row1 .imgbox img{
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+ .row1 .textbox{
+     font-weight: 500;
+     font-size: 1.6em;
+     
+     
+     
+ }
+ .row2 .textbox{
+     
+     font-weight: 500;
+     font-size: 1.6rem;
+     
+     
+ }
+
+ .row2 .imgbox img{
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+ }
+ .row2 .textbox .jaipur{
+     padding: 0.3em;
+ }
+
+
+/* ###############################################     Information Part    ########################################### */
+
+.info{
+    padding: 10rem 0;
+    
+}
+
+.showcase2{
+    /* border: 2px solid red; */
+    /* padding: 8rem 0; */
+}
+.showcase2 .boxwrapper{
+    width: 33.33333%;
+    float: left;
+    box-shadow: 5px 5px 20px 0 #888888;
+    padding: 5rem;
+    text-align: center;
+}
+
+.info ::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.adventure{
+    
+    
+    background: rgba(2, 2, 2, 1.0);
+    background: -webkit-linear-gradient(bottom left, rgba(2, 2, 2, 1.0), rgba(34, 62, 65, 1.0));
+    background: -moz-linear-gradient(bottom left, rgba(2, 2, 2, 1.0), rgba(34, 62, 65, 1.0));
+    background: linear-gradient(to top right, rgba(2, 2, 2, 1.0), rgba(34, 62, 65, 1.0));
+}
+
+.lessprice{
+   
+    background: #1389D2;
+background: -webkit-linear-gradient(top left, #1389D2, #CC9CCA);
+background: -moz-linear-gradient(top left, #1389D2, #CC9CCA);
+background: linear-gradient(to bottom right, #1389D2, #CC9CCA);
+}
+
+.experience{
+    
+    background: rgba(2, 2, 2, 1.0);
+background: -webkit-linear-gradient(bottom left, rgba(2, 2, 2, 1.0), rgba(34, 62, 65, 1.0));
+background: -moz-linear-gradient(bottom left, rgba(2, 2, 2, 1.0), rgba(34, 62, 65, 1.0));
+background: linear-gradient(to top right, rgba(2, 2, 2, 1.0), rgba(34, 62, 65, 1.0));
+}
+
+/* ############################################### footer      ########################################### */
+
+.ending .footer1{
+    
+    text-align: center;
+    letter-spacing: 3rem;
+    
+    height: 14vh;
+    background: rgba(193, 204, 207, 1.0);
+    background: -webkit-linear-gradient(bottom left, rgba(193, 204, 207, 1.0), rgba(21, 101, 109, 1.0));
+    background: -moz-linear-gradient(bottom left, rgba(193, 204, 207, 1.0), rgba(21, 101, 109, 1.0));
+    background: linear-gradient(to top right, rgba(193, 204, 207, 1.0), rgba(21, 101, 109, 1.0));
+}
+
+.footend{
+    margin-top: 1em;
+}
+
+.social{
+    padding-top: 1.3em;
+}
+
+
+/* #######################################          About   Page         ##################################### */
+
+.aboutinfo{
+    padding: 1rem 0;
+    
+}
+
+.about12{
+    
+    border-bottom: 4px  solid red;
+    
+}
+
+.pabout{
+    letter-spacing: 0.3rem;
+    margin-top: 1.3rem;
+}
+
+.left{
+    
+    float: left;
+    width: 50%;
+    
+}
+
+.rigth{
+    
+    width: 50%;
+    float: right;
+        
+}
+
+.points::after{
+    content: '';
+    display: block;
+    clear: both;
+    
+    
+}
+
+.points{
+    margin-top: 3rem;
+    text-align: center;
+    
+}
+
+.points li{
+    list-style: none;
+    /* font-weight: 700; */
+    font-size: 2rem;
+}
+
+
+
+
+.points li::before{
+    content: '\2713';
+    font-weight: bold;
+    padding-right: 1rem;
+    color: red;
+    
+}
+
+
+.count{
+    margin-top: 2rem;
+    padding: 3rem;
+    
+    text-align: center;
+}
+
+ .count1{
+    float: left;
+    width: 25%;
+}
+
+ .count2{
+    float:left;
+    width: 25%;
+ }
+.count3{
+    float:left;
+    width: 25%;
+}
+
+ .count4{
+    float: left;
+    width: 25%;
+}
+
+.count::after{
+    content: '';
+    display: block;
+    clear: both;
+    
+    
+}
+
+.count span{
+    font-size: 3rem;
+}
+
+.banner{
+    background: #630411;
+background: -webkit-linear-gradient(top, #630411, #E92425);
+background: -moz-linear-gradient(top, #630411, #E92425);
+background: linear-gradient(to bottom, #630411, #E92425);
+    box-shadow: 5px 5px 10px 2px rgba(0, 0, 0, 0.5);
+    height: 8.5rem;
+    
+}
+
+.bannerleft{
+    padding:3rem;
+    color: blanchedalmond;
+    float: left;
+    width: 55%;
+}
+
+.bannerright{
+    text-align: center;
+    margin-top: 1rem;
+    
+    padding: 1.3rem;
+    margin-right: 3rem;
+    float: right;
+    width: 30%;
+    border: 2px solid #f4f4f4;
+}
+
+.banner::after{
+    content: '';
+    display: block;
+    clear: float;
+}
+
+
+
+/* #######################################     Contact page    ####################################### */
+
+
+
+
+.formwrapper::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+
+
+
+.address{
+    
+    float: left;
+    width: 49%;
+    padding: 1.3rem;
+}
+
+.form{
+   
+    float: right;
+    width: 49%;
+}
+
+.address h{
+    padding-left: 2.3rem;
+}
+
+.address p{
+    padding: 0.3rem;
+    letter-spacing: 0.3rem;
+    font-weight: 700;
+}
+
+.hform{
+    padding-top: 1.3rem;
+}
+
+.address img{
+    padding-top: 2rem;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.form h1{
+    border-bottom: 2px solid red;
+}
+
+.form p{
+    padding: 0.3rem;
+    letter-spacing: 0.3rem;
+    font-weight: 700;
+}
+
+#message{
+    resize: none;
+    width: 70%;
+    height: 30%;
+}
+
+#submitbtn{
+    padding: 1.3rem;
+   margin-top: 3rem;
+   text-align: center;
+   background-color: royalblue;
+   color: #f4f4f4;
+   border-radius: 3rem;
+}
